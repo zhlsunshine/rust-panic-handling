@@ -11,6 +11,7 @@ fn main() {
 
         // Handle divide by zero panic
         let result_value = panic::catch_unwind(|| {
+            println!("This is the {}th to handle panic.", current_time);
             // Get numerator from user input
             let mut numerator = String::new();
             print!("Please input the numerator: ");

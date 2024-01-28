@@ -97,34 +97,37 @@ $ target/debug/rust-panic-with-handling
 
  ###### Divide by zero ###### 
 
-Please input the numerator: 325
-Please input the denominator: 64
-No panic occur and the result is: 5
+This is the 0th to handle panic.
+Please input the numerator: 432
+Please input the denominator: 43
+No panic occur and the result is: 10
 ##########################################
-Please input the numerator: 75
+This is the 1th to handle panic.
+Please input the numerator: 5343
 Please input the denominator: 0
-thread 'main' panicked at src/main.rs:29:13:
+thread 'main' panicked at src/main.rs:30:13:
 attempt to divide by zero
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 Caught panic: attempt to divide by zero
 ##########################################
-Please input the numerator: 351
-Please input the denominator: 8
-No panic occur and the result is: 43
+This is the 2th to handle panic.
+Please input the numerator: 632
+Please input the denominator: 34
+No panic occur and the result is: 18
 ##########################################
 
  @@@@@@ Iteration @@@@@@ 
 
-Iterate Element: 5
+Iterate Element: 10
 No panic occur for this iteration
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Iterate Element: 0
 No panic occur for this iteration
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Iterate Element: 43
+Iterate Element: 18
 No panic occur for this iteration
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-thread 'main' panicked at src/main.rs:55:45:
+thread 'main' panicked at src/main.rs:56:45:
 index out of bounds: the len is 3 but the index is 3
 Caught panic of unknown type
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -137,34 +140,37 @@ $ target/debug/rust-panic-with-handling
 
  ###### Divide by zero ###### 
 
-Please input the numerator: 453
-Please input the denominator: 7
-No panic occur and the result is: 64
+This is the 0th to handle panic.
+Please input the numerator: 5433
+Please input the denominator: 43
+No panic occur and the result is: 126
 ##########################################
-Please input the numerator: 456
-Please input the denominator: 54e
-thread 'main' panicked at src/main.rs:26:63:
+This is the 1th to handle panic.
+Please input the numerator: 532
+Please input the denominator: 34e
+thread 'main' panicked at src/main.rs:27:63:
 Invalid input: ParseIntError { kind: InvalidDigit }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 Caught panic of unknown type
 ##########################################
-Please input the numerator: 875
-Please input the denominator: 23
-No panic occur and the result is: 38
+This is the 2th to handle panic.
+Please input the numerator: 5432
+Please input the denominator: 35
+No panic occur and the result is: 155
 ##########################################
 
  @@@@@@ Iteration @@@@@@ 
 
-Iterate Element: 64
+Iterate Element: 126
 No panic occur for this iteration
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Iterate Element: 0
 No panic occur for this iteration
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-Iterate Element: 38
+Iterate Element: 155
 No panic occur for this iteration
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-thread 'main' panicked at src/main.rs:55:45:
+thread 'main' panicked at src/main.rs:56:45:
 index out of bounds: the len is 3 but the index is 3
 Caught panic of unknown type
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
