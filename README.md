@@ -7,7 +7,7 @@ Note: I make an implicit panic when iterating the array by indexing the array fr
 ## Directories Description
 
 - `rust-panic-without-handling` is the example whithout handling any panic
-- `rust-panic-with-handling` is the example to handle all panics, including `divided by zero` and `out of index range panic`.
+- `rust-panic-with-handling` is the example to handle all panics, including `divided by zero`, `InvalidDigit` and `out of index range panic`.
 
 
 ## Example of `rust-panic-without-handling` 
