@@ -17,7 +17,7 @@ Note: I make an implicit panic when iterating the array by indexing the array fr
 cd rust-panic-without-handling
 cargo build
 ```
-### Executing the binary of `rust-panic-without-handling` to make the `divided by zero` panic occur
+### `divided by zero` panic
 ```
 $ target/debug/rust-panic-without-handling 
 
@@ -34,7 +34,7 @@ attempt to divide by zero
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
-### Executing the binary of `rust-panic-without-handling` to make the `InvalidDigit` panic occur
+### `InvalidDigit` panic
 ```
 $ target/debug/rust-panic-without-handling 
 
@@ -50,7 +50,7 @@ Invalid input: ParseIntError { kind: InvalidDigit }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
-### Executing the binary of `rust-panic-without-handling` to make the all inputs with `out of index range panic`
+### `out of index range panic`
 ```
 $ target/debug/rust-panic-without-handling 
 
@@ -91,7 +91,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 cd rust-panic-with-handling
 cargo build
 ```
-### Executing the binary of `rust-panic-with-handling` to make both `divided by zero` and `out of index range panic` panics occur
+### `divided by zero` and `out of index range panic` panics
 ```
 $ target/debug/rust-panic-with-handling 
 
@@ -131,7 +131,7 @@ Caught panic of unknown type
 Complete the panic handle examples!
 ```
 
-### Executing the binary of `rust-panic-with-handling` to make both `InvalidDigit` and `out of index range panic` panics occur
+### `InvalidDigit` and `out of index range panic` panics
 ```
 $ target/debug/rust-panic-with-handling 
 
@@ -171,4 +171,4 @@ Caught panic of unknown type
 Complete the panic handle examples!
 ```
 
-**Note: Showing as above, the whole process would not exit even any panic occurs. And we always can see the output of `Complete the panic handle examples!` **
+**Note: Showing as above, the whole process would not exit even any panic occurs. And we always can see the output of `Complete the panic handle examples!`**
