@@ -177,4 +177,7 @@ Caught panic of unknown type
 Complete the panic handle examples!
 ```
 
-**Note: Showing as above, the whole process would not exit even any panic occurs. And we always can see the output of `Complete the panic handle examples!`**
+## Notes
+
+- Showing as above, the whole process would not exit even any panic occurs. And we always can see the output of `Complete the panic handle examples!`
+- This rust example is for [A practice of rewriting foundation software from C to Rust(3)](https://medium.com/rustaceans/a-practice-of-rewriting-general-software-from-c-to-rust-3-802d42a975ff)
